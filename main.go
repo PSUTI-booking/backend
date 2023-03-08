@@ -51,7 +51,7 @@ func main() {
 
 	e := echo.New() //инстанция
 
-	e.GET("/booking", func(c echo.Context) error {
+	e.GET("/bookingCabinets", func(c echo.Context) error {
 		return c.JSONPretty(200, book, " ")
 	})
 
